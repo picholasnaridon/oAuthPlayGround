@@ -1,0 +1,11 @@
+<h1>oAuth Test Site</h1>
+
+<a href="/">home</a>
+
+<a href="/birds">birds</a>
+<a href="/turtles">turtles</a>
+
+<% if @access["access"]["access_id"] != nil %>
+  <p>Welcome  <%= @access["access"]["user"]["first_name"]%> <%= @access["access"]["user"]["last_name"] %> </p>
+  <p>Here's your access  <%= @access %> </p>
+<% end %>

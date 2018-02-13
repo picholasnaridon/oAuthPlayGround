@@ -1,0 +1,20 @@
+<h1>oAuth Test Site</h1>
+
+<h3><a href="https://sandbox.tinypass.com/id/api/v1/identity/vxauth/authorize?response_type=code&client_id=oiGmjC8JwK&redirect_uri=http://localhost:9292">
+  Login Via OAuth
+</a></h3>
+
+
+<a href="/birds">birds</a>
+<a href="/turtles">turtles</a>
+<a href="/bears">bears</a>
+
+
+
+
+
+
+<% if @access["access"]["access_id"] != nil %>
+  <p>Welcome  <%= @access["access"]["user"]["first_name"]%> <%= @access["access"]["user"]["last_name"] %> </p>
+  <p>Here's your access  <%= @access %> </p>
+<% end %>

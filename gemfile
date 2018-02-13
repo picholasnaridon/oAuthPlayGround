@@ -1,0 +1,9 @@
+gem 'sinatra'
+gem 'httpclient'
+gem 'sinatra-contrib'
+gem 'dotenv'
+group :test, :development do
+  gem 'rspec'
+  gem 'rack-test'
+  gem 'pry'
+end
