@@ -30,8 +30,6 @@ def check_access(token)
   return body
 end
 
-class OAuthApp < Sinatra::Base
-  helpers Sinatra::Cookies
 
   get '/' do
     if (params.has_key?(:code))
@@ -59,4 +57,3 @@ class OAuthApp < Sinatra::Base
     @access = check_access(cookies[:token])
     erb :bears
   end
-end
