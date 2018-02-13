@@ -1,6 +1,5 @@
 require 'bundler/setup'
 require 'sinatra'
-require 'rubygems'
 require "sinatra/cookies"
 require 'httpclient'
 require 'json'
